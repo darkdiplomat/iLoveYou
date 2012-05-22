@@ -53,7 +53,7 @@ public class HeroDigger extends HerobrineEvent{
         } else {
             d3 = 360.0D - d3;
         }
-        this.herobrine = new HerobrineCharacter(x, y, z, (float) d3, (float) d4, -1, this.player);
+        this.herobrine = new HerobrineCharacter(x, y, z, (float) d3, (float) d4, Math.random() > 0.8D ? 278 : -1, this.player);
         this.originalLocation = new Location(x, y, z);
         this.herobrine.broadcast(this.player);
 

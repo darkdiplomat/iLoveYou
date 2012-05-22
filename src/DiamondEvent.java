@@ -30,6 +30,11 @@ public class DiamondEvent extends HerobrineEvent{
 
     @Override
     public void trigger() {
+        List<Player> players = server.getPlayerList();
+        if (players.size() == 0) {
+            return;
+        }
+        
         this.placeables.add(Integer.valueOf(1));
         this.placeables.add(Integer.valueOf(2));
         this.placeables.add(Integer.valueOf(3));
@@ -63,10 +68,7 @@ public class DiamondEvent extends HerobrineEvent{
         this.placeables.add(Integer.valueOf(87));
         this.placeables.add(Integer.valueOf(88));
         this.placeables.add(Integer.valueOf(89));
-        List<Player> players = server.getPlayerList();
-        if (players.size() == 0) {
-            return;
-        }
+        
         int index = (int) (Math.random() * players.size());
         this.player = (Player) players.get(index);
 
@@ -91,7 +93,7 @@ public class DiamondEvent extends HerobrineEvent{
         } else {
             d3 = 360.0D - d3;
         }
-        this.herobrine = new HerobrineCharacter(location.x, location.y, location.z, (float) d3, (float) d4, -1, this.player);
+        this.herobrine = new HerobrineCharacter(location.x, location.y, location.z, (float) d3, (float) d4, Math.random() > 0.8D ? 278 : -1, this.player);
         this.herobrine.broadcast(this.player);
 
         this.herobrine.sendMessage(this.player, getGreeting());

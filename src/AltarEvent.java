@@ -270,7 +270,7 @@ public class AltarEvent extends HerobrineEvent{
                 } else {
                     d3 = 360.0D - d3;
                 }
-                AltarEvent.this.hero = new HerobrineCharacter(AltarEvent.this.x + 0.5D, AltarEvent.this.y + 0.5D, AltarEvent.this.z + 0.5D, (float) d3, (float) d4, 50, AltarEvent.this.player);
+                AltarEvent.this.hero = new HerobrineCharacter(AltarEvent.this.x + 0.5D, AltarEvent.this.y + 0.5D, AltarEvent.this.z + 0.5D, (float) d3, (float) d4, 278, AltarEvent.this.player);
                 AltarEvent.this.hero.broadcastToAll();
                 AltarEvent.this.hero.sendMessage(AltarEvent.this.player, AltarEvent.this.appearance());
                 delay = 5000;

@@ -103,7 +103,7 @@ public class iLoveYou extends Plugin {
         @Override
         public boolean onCommand(Player player, String[] command) {
             if (command[0].equalsIgnoreCase("/iloveyou")) {
-                player.sendMessage(Colors.Rose+ HeroLanguage.getString("I love you too.") + " <3");
+                player.sendMessage(Colors.Rose+ HeroLanguage.getString("ilyt") + " <3");
                 return true;
             }
 

@@ -13,19 +13,14 @@ public abstract class NonPlayerCharacter {
         user = new OEntityPlayerMP(mcserv, world.getWorld(), name, new OItemInWorldManager(world.getWorld()));
         handler = new OEntityTrackerEntry(user, 512, 1, true);
         teleportTo(x, y, z, rotation, pitch);
-        if(itemInHand <= 0){
-            setItemInHand((Integer) null);
-        }
-        else{
-            setItemInHand(itemInHand);
-        }
+        setItemInHand(itemInHand);
     }
 
     public void despawn(OEntityPlayerMP player) {
         this.handler.o.remove(player);
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked" })
     public void despawnAll() {
         for (Iterator<OEntityPlayerMP> playerit = ((List<OEntityPlayerMP>)mcserv.h.b).iterator(); playerit.hasNext();) {
             OEntityPlayerMP player = playerit.next();
@@ -110,10 +105,12 @@ public abstract class NonPlayerCharacter {
     }
 
     public void setItemInHand(int type) {
-        if((Integer)type == null){
-            return;
+        if(type > 0){
+            user.y()[0] = new OItemStack(type, 1, 0);
         }
-        user.y()[0] = new OItemStack(type, 1, 0);
+        else{
+            user.y()[0] = null;
+        }
     }
 
     public void teleportTo(double x, double y, double z, float rotation, float pitch) {
