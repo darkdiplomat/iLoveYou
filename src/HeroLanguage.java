@@ -29,6 +29,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Stop.");
         map.put(Language.NL, "Stop.");
         map.put(Language.NO, "Stopp.");
+        map.put(Language.PL, "Stop.");
         map.put(Language.RU, "Стоп.");
         map.put(Language.SV, "Stopp.");
         languages.putKey("stop", map.entrySet());
@@ -42,6 +43,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Non dovresti essere qui.");
         map.put(Language.NL, "Je moet hier niet zijn.");
         map.put(Language.NO, "Du bør ikke være her.");
+        map.put(Language.PL, "Nie powinno tu być.");
         map.put(Language.RU, "Вы не должны быть здесь.");
         map.put(Language.SV, "Du ska inte vara här.");
         languages.putKey("ysnbh", map.entrySet());
@@ -55,6 +57,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Girati.");
         map.put(Language.NL, "Draai je om.");
         map.put(Language.NO, "Snu.");
+        map.put(Language.PL, "Odwróć się.");
         map.put(Language.RU, "Повернись");
         map.put(Language.SV, "Vänd dig om.");
         languages.putKey("ta", map.entrySet());
@@ -68,6 +71,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Smettere di seguire me!");
         map.put(Language.NL, "Stop met me volgt!");
         map.put(Language.NO, "Slutt å følge meg!");
+        map.put(Language.PL, "Przestań za mną!");
         map.put(Language.RU, "Прекратите меня преследовать!");
         map.put(Language.SV, "Sluta efter mig!");
         languages.putKey("sfm", map.entrySet());
@@ -81,6 +85,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Non puoi farlo.");
         map.put(Language.NL, "U kunt niet doen.");
         map.put(Language.NO, "Du kan ikke gjøre det.");
+        map.put(Language.PL, "Nie można tego zrobić.");
         map.put(Language.RU, "Вы не можете это сделать.");
         map.put(Language.SV, "Du kan inte göra det.");
         languages.putKey("ycndt", map.entrySet());
@@ -94,6 +99,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Aiutami!");
         map.put(Language.NL, "Help mij!");
         map.put(Language.NO, "Hjelp meg!");
+        map.put(Language.PL, "Pomóż mi!");
         map.put(Language.RU, "Помоги мне!");
         map.put(Language.SV, "Hjälp mig!");
         languages.putKey("hm", map.entrySet());
@@ -107,6 +113,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Cosa stai facendo?");
         map.put(Language.NL, "Wat doe je?");
         map.put(Language.NO, "Hva gjør du?");
+        map.put(Language.PL, "Co robisz?");
         map.put(Language.RU, "Что вы делаете?");
         map.put(Language.SV, "Vad gör du?");
         languages.putKey("wayd", map.entrySet());
@@ -120,6 +127,7 @@ public class HeroLanguage{
         map.put(Language.IT, "So che mi stanno seguendo.");
         map.put(Language.NL, "Ik weet dat je me volgt.");
         map.put(Language.NO, "Jeg vet at du følger meg.");
+        map.put(Language.PL, "Wiem, że są za mną.");
         map.put(Language.RU, "Я знаю, что вы за мной.");
         map.put(Language.SV, "Jag vet att du följer mig.");
         languages.putKey("ikyafm", map.entrySet());
@@ -133,6 +141,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Tu sei così stupido.");
         map.put(Language.NL, "Je bent zo dom.");
         map.put(Language.NO, "Du er så tåpelig.");
+        map.put(Language.PL, "Jesteś tak głupi.");
         map.put(Language.RU, "Вы так глупо.");
         map.put(Language.SV, "Du är så dumt.");
         languages.putKey("yasf", map.entrySet());
@@ -146,6 +155,7 @@ public class HeroLanguage{
         map.put(Language.IT, "No.");
         map.put(Language.NL, "Nee.");
         map.put(Language.NO, "Nei.");
+        map.put(Language.PL, "Nie.");
         map.put(Language.RU, "Нет.");
         map.put(Language.SV, "Nej.");
         languages.putKey("no", map.entrySet());
@@ -159,6 +169,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Smettila.");
         map.put(Language.NL, "Stop ermee.");
         map.put(Language.NO, "Stopp den.");
+        map.put(Language.PL, "Przestań.");
         map.put(Language.RU, "Остановить ее.");
         map.put(Language.SV, "Sluta.");
         languages.putKey("si", map.entrySet());
@@ -172,6 +183,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Quadri");
         map.put(Language.NL, "Ruiten");
         map.put(Language.NO, "Diamonds");
+        map.put(Language.PL, "Diamenty");
         map.put(Language.RU, "Бриллианты");
         map.put(Language.SV, "Diamanter");
         languages.putKey("diamonds", map.entrySet());
@@ -185,6 +197,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Non puoi prendere.");
         map.put(Language.NL, "U kunt me niet te pakken.");
         map.put(Language.NO, "Du kan ikke ta meg.");
+        map.put(Language.PL, "Nie można mnie złapać.");
         map.put(Language.RU, "Вы не можете поймать меня.");
         map.put(Language.SV, "Du kan inte fånga mig.");
         languages.putKey("ycncm", map.entrySet());
@@ -198,6 +211,7 @@ public class HeroLanguage{
         map.put(Language.IT, "haha");
         map.put(Language.NL, "haha");
         map.put(Language.NO, "haha");
+        map.put(Language.PL, "haha");
         map.put(Language.RU, "haha");
         map.put(Language.SV, "haha");
         languages.putKey("haha", map.entrySet());
@@ -211,6 +225,7 @@ public class HeroLanguage{
         map.put(Language.IT, "ha");
         map.put(Language.NL, "ha");
         map.put(Language.NO, "ha");
+        map.put(Language.PL, "ha");
         map.put(Language.RU, "hа");
         map.put(Language.SV, "ha");
         languages.putKey("ha", map.entrySet());
@@ -224,6 +239,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Io sono qui.");
         map.put(Language.NL, "Ik ben hier.");
         map.put(Language.NO, "Jeg er her.");
+        map.put(Language.PL, "");
         map.put(Language.RU, "Я здесь.");
         map.put(Language.SV, "Jag är här.");
         languages.putKey("iah", map.entrySet());
@@ -237,6 +253,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Perché l'hai fatto?");
         map.put(Language.NL, "Waarom zou je dat doen?");
         map.put(Language.NO, "Hvorfor skulle du gjøre det?");
+        map.put(Language.PL, "Jestem tutaj.");
         map.put(Language.RU, "Зачем вы это делаете?");
         map.put(Language.SV, "Varför skulle du göra det?");
         languages.putKey("wwydt", map.entrySet());
@@ -250,6 +267,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Solo Dio può aiutare adesso.");
         map.put(Language.NL, "Alleen God kan nu helpen.");
         map.put(Language.NO, "Bare Gud kan hjelpe deg nå.");
+        map.put(Language.PL, "Tylko Bóg może ci pomóc teraz.");
         map.put(Language.RU, "Только Бог может помочь вам.");
         map.put(Language.SV, "Bara Gud kan hjälpa dig nu.");
         languages.putKey("ogchyn", map.entrySet());
@@ -263,6 +281,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Questo è mio.");
         map.put(Language.NL, "Dit is van mij.");
         map.put(Language.NO, "Dette er mitt.");
+        map.put(Language.PL, "To jest moje.");
         map.put(Language.RU, "Это мое.");
         map.put(Language.SV, "Detta är min.");
         languages.putKey("tim", map.entrySet());
@@ -276,6 +295,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Ho qualcosa per te.");
         map.put(Language.NL, "Ik heb iets voor je.");
         map.put(Language.NO, "Jeg har noe for deg.");
+        map.put(Language.PL, "Mam coś dla ciebie.");
         map.put(Language.RU, "У меня есть кое-что для вас.");
         map.put(Language.SV, "Jag har något för dig.");
         languages.putKey("ihsfy", map.entrySet());
@@ -289,6 +309,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Ho trovato qualcosa!");
         map.put(Language.NL, "Ik heb iets gevonden!");
         map.put(Language.NO, "Jeg har funnet noe!");
+        map.put(Language.PL, "Znalazłem coś!");
         map.put(Language.RU, "Я нашел что-то!");
         map.put(Language.SV, "Jag har hittat något!");
         languages.putKey("ihfs", map.entrySet());
@@ -302,6 +323,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Seguimi.");
         map.put(Language.NL, "Volg mij.");
         map.put(Language.NO, "Følg meg.");
+        map.put(Language.PL, "Pójdź za Mną.");
         map.put(Language.RU, "Следуй за мной.");
         map.put(Language.SV, "Följ mig.");
         languages.putKey("fm", map.entrySet());
@@ -315,6 +337,7 @@ public class HeroLanguage{
         map.put(Language.IT, "La tua avidità ti ha tradito.");
         map.put(Language.NL, "Uw hebzucht heeft je verraden.");
         map.put(Language.NO, "Din grådighet har forrådt deg.");
+        map.put(Language.PL, "Twoja chciwość zdradził ciebie.");
         map.put(Language.RU, "Ваша жадность предал вас.");
         map.put(Language.SV, "Din girighet har svikit dig.");
         languages.putKey("yghby", map.entrySet());
@@ -328,6 +351,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Hai trovato quello che volevi?");
         map.put(Language.NL, "Heb je gevonden wat je wilde?");
         map.put(Language.NO, "Fant du det du ville?");
+        map.put(Language.PL, "Czy możesz znaleźć?");
         map.put(Language.RU, "Нашли ли вы, что вы хотели?");
         map.put(Language.SV, "Har du hittat det rätta?");
         languages.putKey("dyfwyw", map.entrySet());
@@ -341,6 +365,7 @@ public class HeroLanguage{
         map.put(Language.IT, "Alla ricerca di questi?");
         map.put(Language.NL, "Op zoek naar deze?");
         map.put(Language.NO, "Leter du etter disse?");
+        map.put(Language.PL, "Patrząc na te?");
         map.put(Language.RU, "Глядя на это?");
         map.put(Language.SV, "Letar du efter dessa?");
         languages.putKey("lft", map.entrySet());
