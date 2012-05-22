@@ -78,8 +78,10 @@ public class HeroDigger extends HerobrineEvent{
 
             if (iLoveYou.distance(to, this.herobrine.getLocation()) > 50.0D) {
                 delete();
+                return;
             }
             this.herobrine.broadcast(player);
+            this.herobrine.lookat(this.player);
         }
     }
 

@@ -61,12 +61,15 @@ public class GhostEvent extends HerobrineEvent{
         if (player.equals(this.player)){
             if (iLoveYou.distance(from, this.herobrine.getLocation()) > iLoveYou.distance(to, this.herobrine.getLocation())) {
                 delete();
+                return;
             }
 
             if (iLoveYou.distance(to, this.herobrine.getLocation()) > 50.0D) {
                 delete();
+                return;
             }
             this.herobrine.broadcast(player);
+            this.herobrine.lookat(this.player);
         }
     }
 

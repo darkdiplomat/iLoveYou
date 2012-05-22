@@ -161,6 +161,7 @@ public class ThiefEvent extends HerobrineEvent{
             }
             this.herobrine.teleportTo(this.herobrine.getX(), this.herobrine.getY(), this.herobrine.getZ(), (float) d3, (float) d4);
             this.herobrine.broadcastToAll();
+            this.herobrine.lookat(nearest);
         }
     }
 

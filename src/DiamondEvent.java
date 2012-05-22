@@ -95,7 +95,6 @@ public class DiamondEvent extends HerobrineEvent{
         }
         this.herobrine = new HerobrineCharacter(location.x, location.y, location.z, (float) d3, (float) d4, Math.random() > 0.8D ? 278 : -1, this.player);
         this.herobrine.broadcast(this.player);
-
         this.herobrine.sendMessage(this.player, getGreeting());
     }
 
@@ -205,7 +204,7 @@ public class DiamondEvent extends HerobrineEvent{
                 }
                 this.herobrine.teleportTo(this.herobrine.getX(), this.herobrine.getY(), this.herobrine.getZ(), (float) d3, (float) d4);
                 this.herobrine.broadcast(player);
-
+                this.herobrine.lookat(this.player);
                 if (iLoveYou.distance(to, this.herobrine.getLocation()) < 3.0D) {
                     this.finalizing = true;
                     this.herobrine.sendMessage(player, getFarewell());
