@@ -4,6 +4,7 @@ enum Language{
     DE, //German
     EN, //English
     ES, //Spanish
+    FI, //Finnish
     FR, //French
     IT, //Italian
     NL, //Dutch
@@ -25,13 +26,16 @@ enum Language{
         if (lang.toLowerCase().matches("spanish|es|esp|spa")) {
             return ES;
         }
+        if (lang.toLowerCase().matches("finnish|fi|fin")) {
+            return FI;
+        }
         if (lang.toLowerCase().matches("french|fr|fra|fre")) {
             return FR;
         }
         if (lang.toLowerCase().matches("italian|it|ita")) {
             return IT;
         }
-        if (lang.toLowerCase().matches("dutch|nl|nld")) {
+        if (lang.toLowerCase().matches("dutch|nl|nld|dut")) {
             return NL;
         }
         if (lang.toLowerCase().matches("norwegian|no|nor")) {

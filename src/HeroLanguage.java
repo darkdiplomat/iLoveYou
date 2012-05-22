@@ -11,6 +11,7 @@ public class HeroLanguage{
         map.put(Language.AR, "أنا أحبك جدا");
         map.put(Language.DE, "Ich liebe dich auch.");
         map.put(Language.ES, "Te amo demasiado.");
+        map.put(Language.FI, "Minäkin rakastan sinua.");
         map.put(Language.FR, "Je t'aime aussi.");
         map.put(Language.IT, "Anch'io ti amo.");
         map.put(Language.NL, "Ik hou ook van jou.");
@@ -25,6 +26,7 @@ public class HeroLanguage{
         map.put(Language.AR, "توقف");
         map.put(Language.DE, "Halt.");
         map.put(Language.ES, "Detener.");
+        map.put(Language.FI, "Lopeta.");
         map.put(Language.FR, "Arrêter.");
         map.put(Language.IT, "Stop.");
         map.put(Language.NL, "Stop.");
@@ -39,6 +41,7 @@ public class HeroLanguage{
         map.put(Language.AR, "يجب أن لا يكون هنا");
         map.put(Language.DE, "Sie sollten nicht hier sein.");
         map.put(Language.ES, "Usted no debería estar aquí.");
+        map.put(Language.FI, "Sinun pitäisi olla täällä.");
         map.put(Language.FR, "Vous ne devriez pas être ici.");
         map.put(Language.IT, "Non dovresti essere qui.");
         map.put(Language.NL, "Je moet hier niet zijn.");
@@ -53,6 +56,7 @@ public class HeroLanguage{
         map.put(Language.AR, "بدوره حولها");
         map.put(Language.DE, "Dreh dich um.");
         map.put(Language.ES, "Date la vuelta.");
+        map.put(Language.FI, "Käänny ympäri.");
         map.put(Language.FR, "Tournez-vous.");
         map.put(Language.IT, "Girati.");
         map.put(Language.NL, "Draai je om.");
@@ -67,6 +71,7 @@ public class HeroLanguage{
         map.put(Language.AR, "بعد توقف لي");
         map.put(Language.DE, "Höre auf mir zu folgen!");
         map.put(Language.ES, "Deja de seguirme!");
+        map.put(Language.FI, "Lakkaa seuraamasta minua!");
         map.put(Language.FR, "Arrêtez de me suivre!");
         map.put(Language.IT, "Smettere di seguire me!");
         map.put(Language.NL, "Stop met me volgt!");
@@ -81,6 +86,7 @@ public class HeroLanguage{
         map.put(Language.AR, "لا يمكنك أن تفعل ذلك");
         map.put(Language.DE, "Sie können das nicht tun.");
         map.put(Language.ES, "Usted no puede hacer eso.");
+        map.put(Language.FI, "Et voi tehdä sitä.");
         map.put(Language.FR, "Vous ne pouvez pas faire cela.");
         map.put(Language.IT, "Non puoi farlo.");
         map.put(Language.NL, "U kunt niet doen.");
@@ -95,6 +101,7 @@ public class HeroLanguage{
         map.put(Language.AR, "مساعدتي");
         map.put(Language.DE, "Helfen Sie mir!");
         map.put(Language.ES, "¡Ayúdame!");
+        map.put(Language.FI, "Auta minua!");
         map.put(Language.FR, "Aidez-moi!");
         map.put(Language.IT, "Aiutami!");
         map.put(Language.NL, "Help mij!");
@@ -109,6 +116,7 @@ public class HeroLanguage{
         map.put(Language.AR, "ماذا تفعل");
         map.put(Language.DE, "Was machst du da?");
         map.put(Language.ES, "¿Qué estás haciendo?");
+        map.put(Language.FI, "Mitä sinä teet?");
         map.put(Language.FR, "Que faites-vous?");
         map.put(Language.IT, "Cosa stai facendo?");
         map.put(Language.NL, "Wat doe je?");
@@ -123,6 +131,7 @@ public class HeroLanguage{
         map.put(Language.AR, "وأنا أعلم أنك لي بعد");
         map.put(Language.DE, "Ich weiß, du hinter mir her sind.");
         map.put(Language.ES, "Sé que me están siguiendo.");
+        map.put(Language.FI, "Tiedän, että olet seurannut minua.");
         map.put(Language.FR, "Je sais que vous me suivez.");
         map.put(Language.IT, "So che mi stanno seguendo.");
         map.put(Language.NL, "Ik weet dat je me volgt.");
@@ -137,6 +146,7 @@ public class HeroLanguage{
         map.put(Language.AR, "أنت أحمق جدا");
         map.put(Language.DE, "Sie sind so dumm.");
         map.put(Language.ES, "Eres tan tonto.");
+        map.put(Language.FI, "Olet niin typeriä.");
         map.put(Language.FR, "Vous êtes si sotte.");
         map.put(Language.IT, "Tu sei così stupido.");
         map.put(Language.NL, "Je bent zo dom.");
@@ -151,6 +161,7 @@ public class HeroLanguage{
         map.put(Language.AR, "رقم");
         map.put(Language.DE, "Nein.");
         map.put(Language.ES, "No.");
+        map.put(Language.FI, "Ei.");
         map.put(Language.FR, "Non.");
         map.put(Language.IT, "No.");
         map.put(Language.NL, "Nee.");
@@ -165,6 +176,7 @@ public class HeroLanguage{
         map.put(Language.AR, "وقفه");
         map.put(Language.DE, "Hör auf.");
         map.put(Language.ES, "Basta ya.");
+        map.put(Language.FI, "Lopeta.");
         map.put(Language.FR, "Arrêtez.");
         map.put(Language.IT, "Smettila.");
         map.put(Language.NL, "Stop ermee.");
@@ -179,6 +191,7 @@ public class HeroLanguage{
         map.put(Language.AR, "الماس");
         map.put(Language.DE, "Diamanten");
         map.put(Language.ES, "Diamantes");
+        map.put(Language.FI, "Ruutu");
         map.put(Language.FR, "Diamants");
         map.put(Language.IT, "Quadri");
         map.put(Language.NL, "Ruiten");
@@ -193,6 +206,7 @@ public class HeroLanguage{
         map.put(Language.AR, "لا يمكنك اللحاق بي");
         map.put(Language.DE, "Du kannst mich nicht fangen.");
         map.put(Language.ES, "No me pueden atrapar.");
+        map.put(Language.FI, "Et voi minua kiinni.");
         map.put(Language.FR, "Vous ne pouvez pas me rattraper.");
         map.put(Language.IT, "Non puoi prendere.");
         map.put(Language.NL, "U kunt me niet te pakken.");
@@ -207,6 +221,7 @@ public class HeroLanguage{
         map.put(Language.AR, "haha");
         map.put(Language.DE, "haha");
         map.put(Language.ES, "haha");
+        map.put(Language.FI, "haha");
         map.put(Language.FR, "haha");
         map.put(Language.IT, "haha");
         map.put(Language.NL, "haha");
@@ -221,6 +236,7 @@ public class HeroLanguage{
         map.put(Language.AR, "ha");
         map.put(Language.DE, "ha");
         map.put(Language.ES, "ha");
+        map.put(Language.FI, "ha");
         map.put(Language.FR, "ha");
         map.put(Language.IT, "ha");
         map.put(Language.NL, "ha");
@@ -235,6 +251,7 @@ public class HeroLanguage{
         map.put(Language.AR, "وأنا هنا");
         map.put(Language.DE, "Ich bin hier.");
         map.put(Language.ES, "Yo estoy aquí.");
+        map.put(Language.FI, "Olen täällä.");
         map.put(Language.FR, "Je suis ici.");
         map.put(Language.IT, "Io sono qui.");
         map.put(Language.NL, "Ik ben hier.");
@@ -249,6 +266,7 @@ public class HeroLanguage{
         map.put(Language.AR, "لماذا تفعل ذلك");
         map.put(Language.DE, "Warum würden Sie das tun?");
         map.put(Language.ES, "¿Por qué hiciste eso?");
+        map.put(Language.FI, "Miksi tekisit niin?");
         map.put(Language.FR, "Pourquoi voudriez-vous faire?");
         map.put(Language.IT, "Perché l'hai fatto?");
         map.put(Language.NL, "Waarom zou je dat doen?");
@@ -263,6 +281,7 @@ public class HeroLanguage{
         map.put(Language.AR, "فقط يمكن أن تساعدك على الله الآن");
         map.put(Language.DE, "Nur Gott kann dir jetzt helfen.");
         map.put(Language.ES, "Sólo Dios puede ayudar ahora.");
+        map.put(Language.FI, "Vain Jumala voi auttaa sinua nyt.");
         map.put(Language.FR, "Seul Dieu peut vous aider maintenant.");
         map.put(Language.IT, "Solo Dio può aiutare adesso.");
         map.put(Language.NL, "Alleen God kan nu helpen.");
@@ -277,6 +296,7 @@ public class HeroLanguage{
         map.put(Language.AR, "هذا هو لي");
         map.put(Language.DE, "Das ist meins.");
         map.put(Language.ES, "Esta es la mía.");
+        map.put(Language.FI, "Tämä on minun.");
         map.put(Language.FR, "Ceci est à moi.");
         map.put(Language.IT, "Questo è mio.");
         map.put(Language.NL, "Dit is van mij.");
@@ -291,6 +311,7 @@ public class HeroLanguage{
         map.put(Language.AR, "لدي شيء لك");
         map.put(Language.DE, "Ich habe etwas für Sie.");
         map.put(Language.ES, "Tengo algo para ti.");
+        map.put(Language.FI, "");
         map.put(Language.FR, "J'ai quelque chose pour vous.");
         map.put(Language.IT, "Ho qualcosa per te.");
         map.put(Language.NL, "Ik heb iets voor je.");
@@ -305,6 +326,7 @@ public class HeroLanguage{
         map.put(Language.AR, "لقد وجدت شيئا");
         map.put(Language.DE, "Ich habe etwas gefunden!");
         map.put(Language.ES, "He encontrado algo!");
+        map.put(Language.FI, "Minulla on sinulle jotain.");
         map.put(Language.FR, "J'ai trouvé quelque chose!");
         map.put(Language.IT, "Ho trovato qualcosa!");
         map.put(Language.NL, "Ik heb iets gevonden!");
@@ -319,6 +341,7 @@ public class HeroLanguage{
         map.put(Language.AR, "يتبعني");
         map.put(Language.DE, "Folgen Sie mir.");
         map.put(Language.ES, "Sígueme.");
+        map.put(Language.FI, "Seuraa minua.");
         map.put(Language.FR, "Suivez-moi.");
         map.put(Language.IT, "Seguimi.");
         map.put(Language.NL, "Volg mij.");
@@ -333,6 +356,7 @@ public class HeroLanguage{
         map.put(Language.AR, "وقد خانوا الجشع الخاص بك");
         map.put(Language.DE, "Ihre Gier hat dich verraten.");
         map.put(Language.ES, "Su avaricia le ha traicionado.");
+        map.put(Language.FI, "Teidän ahneus on pettänyt sinua.");
         map.put(Language.FR, "Votre cupidité vous a trahi.");
         map.put(Language.IT, "La tua avidità ti ha tradito.");
         map.put(Language.NL, "Uw hebzucht heeft je verraden.");
@@ -347,6 +371,7 @@ public class HeroLanguage{
         map.put(Language.AR, "لم تجد ما تريد");
         map.put(Language.DE, "Haben Sie gefunden, was Sie wollten?");
         map.put(Language.ES, "¿Encontraste lo que buscabas?");
+        map.put(Language.FI, "Löysitkö mitä halusit?");
         map.put(Language.FR, "Avez-vous trouvé ce que vous vouliez?");
         map.put(Language.IT, "Hai trovato quello che volevi?");
         map.put(Language.NL, "Heb je gevonden wat je wilde?");
@@ -361,6 +386,7 @@ public class HeroLanguage{
         map.put(Language.AR, "أبحث عن هؤلاء");
         map.put(Language.DE, "Suchen Sie diese?");
         map.put(Language.ES, "¿Buscas esto?");
+        map.put(Language.FI, "Etsitkö näitä?");
         map.put(Language.FR, "Vous recherchez des ceux-ci?");
         map.put(Language.IT, "Alla ricerca di questi?");
         map.put(Language.NL, "Op zoek naar deze?");
