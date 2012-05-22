@@ -112,6 +112,7 @@ public class AltarEvent extends HerobrineEvent{
             }
             this.hero.teleportTo(this.hero.getX(), this.hero.getY(), this.hero.getZ(), (float) d3, (float) d4);
             this.hero.broadcastToAll();
+            this.hero.lookat(this.player);
             if (this.cursed) {
                 world.setBlockAt(51, (int) Math.floor(to.x), (int) Math.floor(to.y), (int) Math.floor(to.z));
             }

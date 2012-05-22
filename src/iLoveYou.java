@@ -11,6 +11,7 @@ public class iLoveYou extends Plugin {
     public final static String version = "0.6.1";
     public static boolean enabled;
     public static HerobrineEvent currEvent;
+    public static SpawnEvent spawnevent;
 
     @Override
     public void enable() {
@@ -77,27 +78,9 @@ public class iLoveYou extends Plugin {
         }
     }
     
-    /**
-     * runnable to despawn Herobrine if called via spawnHerobrine command
-     * 
-     * @author darkdiplomat
-     */
-    private class HeroDespawn implements Runnable {
-        HerobrineCharacter herobrine;
-        
-        private HeroDespawn(HerobrineCharacter herobrine) {
-            this.herobrine = herobrine;
-        }
-        
-        @Override
-        public void run(){
-            herobrine.delete();
-        }
-    }
+    
 
     private class PlayerListener extends PluginListener {
-        private HerobrineCharacter herobrine;
-
         private PlayerListener() { }
 
         @Override
@@ -108,11 +91,10 @@ public class iLoveYou extends Plugin {
             }
 
             if (command[0].equalsIgnoreCase("/spawnHerobrine")) {
-                Location location = player.getLocation();
-                this.herobrine = new HerobrineCharacter(location.x, location.y, location.z, location.rotX, location.rotY, -1, player);
-                this.herobrine.broadcast(player);
-                this.herobrine.sendMessage(player, "Watch your back");
-                server.addToServerQueue(new HeroDespawn(herobrine), 10000L);
+                if(iLoveYou.spawnevent == null){
+                    iLoveYou.spawnevent = new SpawnEvent(player);
+                    iLoveYou.spawnevent.trigger();
+                }
                 return true;
             }
 
@@ -126,6 +108,9 @@ public class iLoveYou extends Plugin {
         public void onPlayerMove(Player player, Location from, Location to) {
             if (iLoveYou.currEvent != null) {
                 iLoveYou.currEvent.sendMove(player, from, to);
+            }
+            if (iLoveYou.spawnevent != null) {
+                iLoveYou.spawnevent.sendMove(player, from, to);
             }
         }
 

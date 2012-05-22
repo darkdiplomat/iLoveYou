@@ -115,5 +115,43 @@ public abstract class NonPlayerCharacter {
 
     public void teleportTo(double x, double y, double z, float rotation, float pitch) {
         user.b(x, y, z, rotation, pitch);
+        user.ay = pitch; //set head position
+        user.e(); //Update head position
     }
+    
+    //Code from Craftizens
+    public void lookat(Player player){
+        double myX = player.getX();
+        double myY = player.getY();
+        double myZ = player.getZ();
+        double targX = getX();
+        double targY = getY();
+        double targZ = getZ();
+        double dist = distance(targX, targY, targZ, myX, myY, myZ);
+        if (dist < 25){
+            //yaw 
+            double adjyaw = myX - targX; 
+            double oppyaw = myZ - targZ; 
+            double yaw = Math.atan2(oppyaw, adjyaw); 
+            double rota = yaw*180/Math.PI;
+            setRotation ((float) rota - 90);
+            //pitch 
+            double adjpitch = distance(targX, targZ, myX, myZ); 
+            double opppitch = targY - myY; 
+            double thepitch = (Math.atan2(opppitch, adjpitch)); 
+            double pit =  thepitch*180/Math.PI;
+            setPitch ((float)pit);
+            user.ay = (float)pit; //set head position
+            user.e(); //Update head position
+            broadcast(player);
+        }
+    }
+    
+    private double distance(double x1, double z1, double x2, double z2) {
+        return Math.sqrt(Math.pow((x1-x2),2)+Math.pow((z1-z2),2));
+    }
+    private double distance(double x1, double y1, double z1, double x2, double y2, double z2) {
+        return Math.sqrt(Math.pow((x1-x2),2)+Math.pow((y1-y2),2)+Math.pow((z1-z2),2));
+    }
+    //end code from Craftizens
 }
