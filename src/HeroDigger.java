@@ -25,7 +25,7 @@ public class HeroDigger extends HerobrineEvent{
         this.player = players.get(index);
 
         if (HeroSettings.console) {
-            System.out.println("[ILY]: " + this.player.getName() + " has gone on a chase");
+            iLoveYou.logger.info("[ILY]: " + this.player.getName() + " has gone on a chase");
         }
         double theta = Math.random() * 3.141592653589793D * 2.0D;
 
@@ -99,14 +99,14 @@ public class HeroDigger extends HerobrineEvent{
         case 3:
         case 4:
         case 5:
-            return HeroLanguage.getString("stop.");
+            return HeroLanguage.getString("stop");
         case 6:
         case 7:
         case 8:
         case 9:
         case 10:
         case 11:
-            return HeroLanguage.getString("you shouldn't be here.");
+            return HeroLanguage.getString("ysnbh");
         case 12:
         case 13:
         case 14:
@@ -114,7 +114,7 @@ public class HeroDigger extends HerobrineEvent{
         case 16:
         case 17:
         case 18:
-            return HeroLanguage.getString("help me!");
+            return HeroLanguage.getString("hm");
         case 19:
         case 20:
         case 21:
@@ -130,7 +130,7 @@ public class HeroDigger extends HerobrineEvent{
         case 30:
         case 31:
         case 32:
-            return HeroLanguage.getString("what are you doing?");
+            return HeroLanguage.getString("wayd");
         case 33:
         case 34:
         case 35:
@@ -138,9 +138,9 @@ public class HeroDigger extends HerobrineEvent{
         case 37:
         case 38:
         case 39:
-            return HeroLanguage.getString("you can't do that");
+            return HeroLanguage.getString("ycndt");
         }
-        return HeroLanguage.getString("stop.");
+        return HeroLanguage.getString("stop");
     }
 
     public String stopFollowing() {
@@ -152,14 +152,14 @@ public class HeroDigger extends HerobrineEvent{
         case 3:
         case 4:
         case 5:
-            return HeroLanguage.getString("stop following me!");
+            return HeroLanguage.getString("sfm");
         case 6:
         case 7:
         case 8:
         case 9:
         case 10:
         case 11:
-            return HeroLanguage.getString("i know you're following me");
+            return HeroLanguage.getString("ikyafm");
         case 12:
         case 13:
         case 14:
@@ -167,7 +167,7 @@ public class HeroDigger extends HerobrineEvent{
         case 16:
         case 17:
         case 18:
-            return HeroLanguage.getString("no.");
+            return HeroLanguage.getString("no");
         case 19:
         case 20:
         case 21:
@@ -176,14 +176,14 @@ public class HeroDigger extends HerobrineEvent{
         case 24:
         case 25:
         case 26:
-            return HeroLanguage.getString("stop it.");
+            return HeroLanguage.getString("si");
         case 27:
         case 28:
         case 29:
         case 30:
         case 31:
         case 32:
-            return HeroLanguage.getString("you can't catch me.");
+            return HeroLanguage.getString("ycncm");
         case 33:
         case 34:
         case 35:
@@ -191,9 +191,9 @@ public class HeroDigger extends HerobrineEvent{
         case 37:
         case 38:
         case 39:
-            return HeroLanguage.getString("haha.");
+            return HeroLanguage.getString("haha");
         }
-        return HeroLanguage.getString("stop.");
+        return HeroLanguage.getString("stop");
     }
 
     public void moveHerobrine(double dx, double dy, double dz, Location loc) {

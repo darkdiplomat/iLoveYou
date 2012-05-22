@@ -18,7 +18,7 @@ public class HeroSettings{
             language = Language.getLanguage(file.getString("language", "en"));
             file.save();
         } catch (IOException e) {
-            System.out.println("[ILY]: Unable to create iLoveYouVanilla.properties");
+            iLoveYou.logger.warning("[ILY]: Unable to create iLoveYouVanilla.properties");
         }
 
         try{
@@ -40,7 +40,7 @@ public class HeroSettings{
 
             file.save();
         } catch (IOException e) {
-            System.out.println("[ILY]: Unable to create iLoveYou.properties");
+            iLoveYou.logger.warning("[ILY]: Unable to create iLoveYou.properties");
         }
     }
 
@@ -57,7 +57,7 @@ public class HeroSettings{
             try {
                 data.add(Integer.valueOf(Integer.parseInt(str)));
             } catch (Exception e) {
-                System.out.println("Invalid block id value: " + str);
+                iLoveYou.logger.warning("Invalid block id value: " + str);
             }
         }
         return data;

@@ -24,7 +24,7 @@ public class DiamondEvent extends HerobrineEvent{
     public void restoreBlocks() {
         while (this.blocks.size() > 0) {
             Block block = this.blocks.removeFirst();
-            iLoveYou.world.setBlock(block);
+            world.setBlock(block);
         }
     }
 
@@ -369,7 +369,7 @@ public class DiamondEvent extends HerobrineEvent{
             if (DiamondEvent.this.blocks.size() > 0) {
                 Block block = DiamondEvent.this.blocks.removeFirst();
                 DiamondEvent.world.setBlock(block);
-                HerobrineEvent.server.addToServerQueue(this, 300L);
+                DiamondEvent.server.addToServerQueue(this, 300L);
             } else {
                 DiamondEvent.this.delete();
             }

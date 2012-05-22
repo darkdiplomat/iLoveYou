@@ -10,7 +10,7 @@ public class HerobrineCharacter extends NonPlayerCharacter{
         return new Location(getX(), getY(), getZ());
     }
 
-    public void sendMessage(Player p, String message) {
-        p.sendMessage(String.format("(MSG) %s<%s>%s %s", Colors.Gold, HeroSettings.name, Colors.White, message ));
+    public void sendMessage(Player player, String message) {
+        player.sendMessage(String.format("(MSG) <%s%s%s> %s", Colors.Gold, HeroSettings.name, Colors.White, message ));
     }
 }

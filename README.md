@@ -10,7 +10,8 @@ iLoveYou is a plugin for the CanaryMod Minecraft Server Modification.
 Licensed under the GNU General Public License v3
 
 iLoveYou originally by tkelly (http://topica-rp.com/hmod/forum/showthread3b9b.html?tid=2247)
-Originally updated by 
+
+Originally updated by Talmor
 
 License
 ---------

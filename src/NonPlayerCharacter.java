@@ -14,7 +14,7 @@ public abstract class NonPlayerCharacter {
         handler = new OEntityTrackerEntry(user, 512, 1, true);
         teleportTo(x, y, z, rotation, pitch);
         if(itemInHand <= 0){
-            setItemInHand(283);
+            setItemInHand((Integer) null);
         }
         else{
             setItemInHand(itemInHand);
@@ -106,10 +106,13 @@ public abstract class NonPlayerCharacter {
     }
 
     public int getItemInHand() {
-        return user.y()[0].c;
+        return user.y()[0] != null ? user.y()[0].c : -1;
     }
 
     public void setItemInHand(int type) {
+        if((Integer)type == null){
+            return;
+        }
         user.y()[0] = new OItemStack(type, 1, 0);
     }
 

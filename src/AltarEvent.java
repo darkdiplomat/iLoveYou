@@ -8,19 +8,12 @@ public class AltarEvent extends HerobrineEvent{
     boolean cursed = false;
     boolean precurse = false;
     public boolean stopped;
-    public String plugins = "";
-    public static PluginLoader loader = etc.getLoader();
-
-    public void disablePlugins() { }
-
-    public void enablePlugins() { }
 
     @Override
     public void delete(){
         super.delete();
         this.hero.delete();
         this.stopped = true;
-        enablePlugins();
     }
 
     public AltarEvent(Block block, Player p) {
@@ -85,7 +78,6 @@ public class AltarEvent extends HerobrineEvent{
     @Override
     public void trigger() {
         this.precurse = true;
-        disablePlugins();
         server.addToServerQueue(new AltarEvent.AltarEvents(), 5000L);
     }
 
@@ -235,8 +227,7 @@ public class AltarEvent extends HerobrineEvent{
     private class AltarEvents implements Runnable {
         int step = 0;
 
-        public AltarEvents() {
-        }
+        public AltarEvents() { }
 
         @Override
         public void run() {
